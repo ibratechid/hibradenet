@@ -48,7 +48,7 @@
 <!-- Header/Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="http://localhost/hibradenet/">
+        <a class="navbar-brand" href="https://hibradenet.vercel.app/">
             <img src="images/hibrade.png" alt="" style="height: 55px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -57,7 +57,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
             </ul>
-            <a href="http://localhost/hibradenet/" class="btn btn-primary ms-lg-3">Back to Home</a>
+            <a href="https://hibradenet.vercel.app/" class="btn btn-primary ms-lg-3">Back to Home</a>
         </div>
     </div>
 </nav>
@@ -67,7 +67,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <h2 class="mb-4 text-center">Get in Touch</h2>
-            <form id="contactForm" class="contact-form" action="sendmail.php" method="POST">
+            <form id="contactForm" action="https://formspree.io/f/xzzvvgra" method="POST">
                 <div class="mb-3">
                     <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
@@ -93,6 +93,8 @@
                     <button type="submit" class="btn btn-primary">Send via Email</button>
                     <a id="whatsappButton" class="btn btn-success text-white">Send via WhatsApp</a>
                 </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://hibradenet.vercel.app/thanks.html">
             </form>
         </div>
     </div>
